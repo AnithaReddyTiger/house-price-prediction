@@ -3,15 +3,9 @@ jobs:
     stages:
         - name: 'clean-base-tables'
           tasks:
-            - name: 'product'
-              params: {}
-            - name: 'orders'
+            - name: 'housing'
               params: {}
             
-        - name: 'clean-derivative-tables'
-          tasks:
-            - name: 'sales'
-              params: {}
         - name: 'train-test-split'
           tasks:
             - name: 'train-test'
